@@ -1,0 +1,117 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+  @import url('https://fonts.googleapis.com/css2?family=Akaya+Kanadaka&family=Nunito:ital,wght@0,200;0,300;0,400;0,600;0,700;1,300;1,400&family=Poppins:ital@1&family=Roboto:wght@300;500&family=Sofia+Sans:ital,wght@1,300&family=Ubuntu&display=swap');
+
+  .banner{
+    width: 100%;
+    height: 100vh;
+    background-image:linear-gradient(rgba(0,0,0,0.75),rgba(0,0,0,0.1)), url(christian-koch-D_4R9CcYZOk-unsplash.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+  }
+  .navbar{
+    width: 90%;
+   
+    margin: auto;
+    padding: 35px 0;
+    display: flex;
+    justify-content: space-between;
+  }
+  .logo{
+    cursor: pointer;
+    width: 120px;
+   
+  }
+  svg{
+    color: #fff;
+  }
+  .navbar ul li{
+    list-style-type:none ;
+    display: inline-block;
+    margin: 0 20px;
+    position: relative;
+    color: #fff;
+    
+    cursor: pointer;
+  }
+  .navbar ul li a{
+    text-decoration: none;
+    color: #fff;
+    text-transform: uppercase;
+  }
+  .navbar ul li a::after{
+    content: "";
+    position: absolute;
+    height: 3px;
+    width: 0;
+    background-color: rgb(255, 0, 0);
+    left: 0;
+    bottom: -10px;
+    transition:0.5s;
+    
+
+  }
+  .navbar ul li a:hover::after{
+    width: 100%;
+
+    
+  }
+  .content{
+    position: absolute;
+    width: 100%;
+    /* display: flex;
+    flex-direction: column;
+    justify-content: center; */
+    text-align: center;
+    left: 0;
+    bottom: 0px;
+    top: 250px;
+    color:#fff;
+    
+  }
+  .content h1{
+    font-size: 70px;
+    letter-spacing: 2px;
+  }
+  .content p{
+    margin:10px 0 ;
+    font-size: 20px;
+    line-height: 25px;
+    letter-spacing: 1px;
+    
+  }
+  .button{
+    width: 200px;
+    height: 10px;
+  
+    padding: 15px 0 ;
+    margin: 10px ;
+    border-radius: 25px;
+    font-weight: bold;
+    border: 2px solid #89f1e6;
+    cursor: pointer;
+    position: relative;
+    top: px;
+  
+ 
+  }
+  .button>span{
+    background: #89f1e6;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    text-align: center;
+    border-radius: 25px;
+    font-size: 20px;
+   
+   
+ 
+
+  }
